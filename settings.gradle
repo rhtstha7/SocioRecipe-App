@@ -1,0 +1,2 @@
+rootProject.name='SocialRecipe'
+include ':app'

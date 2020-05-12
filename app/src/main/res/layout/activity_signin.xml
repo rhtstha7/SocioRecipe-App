@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:animateLayoutChanges="true"
+    android:background="@color/white"
+    tools:context=".SigninActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="60dp"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_margin="16dp"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginBottom="50dp"
+                app:srcCompat="@drawable/login_logo" />
+
+            <EditText
+                android:id="@+id/login_email_edit"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:ems="10"
+                android:paddingLeft="25dp"
+                android:hint="@string/email"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/edit_background"
+                android:inputType="textEmailAddress" />
+
+            <EditText
+                android:id="@+id/login_password_edit"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:paddingLeft="25dp"
+                android:ems="10"
+                android:hint="@string/password"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/edit_background"
+                android:inputType="textPassword" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp">
+                <TextView
+                    android:id="@+id/login_forgetpassword_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="30dp"
+                    android:layout_weight="1"
+                    android:textColor="@color/colorPrimary"
+                    android:text="@string/forgetpassword"/>
+                <TextView
+                    android:id="@+id/login_resendEmail_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingRight="30dp"
+                    android:textAlignment="viewEnd"
+                    android:visibility="invisible"
+                    android:layout_weight="1"
+                    android:textColor="@color/colorPrimary"
+                    android:text="@string/resend_email"/>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/login_login_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btn_background"
+                android:textColor="@color/white"
+                android:layout_marginBottom="10dp"
+                android:text="@string/login" />
+
+            <com.wang.avi.AVLoadingIndicatorView
+                android:id="@+id/login_loading_animation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="invisible"
+                app:indicatorName="BallTrianglePathIndicator"
+                app:indicatorColor="@color/colorPrimary"
+                />
+        </LinearLayout>
+    </ScrollView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:padding="20dp"
+            android:textColor="@android:color/black"
+            android:text="@string/new_user" />
+        <TextView
+            android:id="@+id/login_signup_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:padding="20dp"
+            android:textAlignment="textEnd"
+            android:textColor="@color/colorPrimary"
+            android:text="@string/signup" />
+    </LinearLayout>
+</RelativeLayout>

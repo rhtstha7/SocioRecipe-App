@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">Socio Recipe</string>
+    <string name="app_title">Discover delicious food ideas and new recipes</string>
+    <string name="start">Start</string>
+    <string name="login">Sign in</string>
+    <string name="logout">Sign out</string>
+    <string name="signup">Sign up</string>
+    <string name="forgetpassword">Forget Password</string>
+    <string name="resend_email">Resend Verification Email</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="username">Username</string>
+    <string name="new_user">New on Socio Recipe?</string>
+    <string name="old_user">Already have an account?</string>
+    <string name="know_password">Do you remember your password?</string>
+    <string name="home">Home</string>
+    <string name="search">Search</string>
+    <string name="post">Post</string>
+    <string name="profile">Profile</string>
+    <string name="change_password">Change Password</string>
+    <string name="saved_recipe">Saved Recipes</string>
+    <string name="save">Save</string>
+    <string name="new_password">New Password</string>
+    <string name="old_password">Old Password</string>
+    <string name="recipe_name">Recipe Name</string>
+    <string name="recipe_details">Recipe Details</string>
+
+
+</resources>
